@@ -1,5 +1,6 @@
 import firebase from '../firebase'
 
+
 export function fetchUserData(firebaseUser) {
 
     return function (dispatch) {
@@ -17,10 +18,7 @@ export function fetchUserData(firebaseUser) {
     }
 }
 
-export function keysFetched(keys) {
-    return { type: 'KEYS_FETCHED', payload: keys }
 
-}
 
 export function loadApiKeys() {
     return function (dispatch) {
@@ -33,4 +31,17 @@ export function loadApiKeys() {
                 console.log(error)
             });
     }
+}
+
+export function keysFetched(keys) {
+    return { type: 'KEYS_FETCHED', payload: keys }
+
+}
+
+export function logInSuccess(userData) {
+    return { type: 'LOG_IN_SUCCESS', payload: userData };
+}
+
+export function logOutSuccess(){
+    return { type:'LOG_OUT_SUCCESS'}
 }

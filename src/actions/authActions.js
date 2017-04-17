@@ -1,4 +1,6 @@
 import firebase from '../firebase'
+import {fetchUserData, loadApiKeys, logOutSuccess} from './userActions'
+
 
 // Log In Action Creator // 
 export function logIn(credential) {
@@ -57,11 +59,3 @@ export function logOut() {
     }
 }
 
-
-export function logInSuccess(userData) {
-    return { type: 'LOG_IN_SUCCESS', payload: userData };
-}
-
-export function logOutSuccess(){
-    return { type:'LOG_OUT_SUCCESS'}
-}

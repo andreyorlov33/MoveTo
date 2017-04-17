@@ -1,4 +1,4 @@
-export default function searchReducer(state = {}, action) {
+export  function searchReducer(state = {}, action) {
     switch (action.type) {
         case 'KEYS_FETCHED':
             return Object.assign({}, state, {

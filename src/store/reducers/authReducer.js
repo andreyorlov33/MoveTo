@@ -1,5 +1,5 @@
 
-export default function authReducer(state = {}, action) {
+export  function authReducer(state = {}, action) {
     switch (action.type) {
         case 'LOG_IN_SUCCESS':
             return Object.assign({}, state, {
@@ -16,6 +16,10 @@ export default function authReducer(state = {}, action) {
 
         case 'LOG_OUT_SUCCESS':
             return state = {}
+            
+        default:
+            return state
     }
+    
 
 }

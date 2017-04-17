@@ -1,0 +1,27 @@
+{
+  "name": "move-to",
+  "version": "2.0.0",
+  "description": "Web app to search a city you are interested in moving to and receive data regarding that city",
+  "main": "server.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "author": "Matt Whitcomb, Andrey Orlov, Ryan House",
+  "license": "MIT",
+
+  "dependencies": {
+    "axios": "^0.16.1",
+    "firebase": "^3.7.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-form": "^6.6.1",
+    "redux-logger": "^3.0.1",
+    "redux-promise-middleware": "^4.2.0",
+    "redux-thunk": "^2.2.0"
+  }
+}
